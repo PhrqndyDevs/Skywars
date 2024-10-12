@@ -1,0 +1,89 @@
+# General configuration for SkyWars plugin
+
+game:
+  countdown: 30                    # Countdown time before game starts (in seconds)
+  max_players: 12                  # Maximum number of players in a game
+  min_players: 4                   # Minimum number of players required to start a game
+  auto_start: true                 # Automatically start the game when minimum players are reached
+
+lobby:
+  spawn_location:                  # Location where players spawn in the lobby
+    x: 100
+    y: 65
+    z: 100
+  countdown_time: 60               # Time players spend in the lobby before the game starts (in seconds)
+
+arenas:
+  - name: Arena1
+    spawn_locations:               # List of spawn locations for players in the arena
+      - {x: 150, y: 65, z: 150}
+      - {x: 155, y: 65, z: 155}
+      - {x: 160, y: 65, z: 160}
+    boundary:                      # Boundary of the arena
+      min: {x: 100, y: 60, z: 100}
+      max: {x: 200, y: 70, z: 200}
+
+kits:
+  default:
+    - {item: IRON_SWORD, count: 1}
+    - {item: BOW, count: 1}
+    - {item: ARROW, count: 16}
+  archer:
+    - {item: BOW, count: 1}
+    - {item: ARROW, count: 32}
+  warrior:
+    - {item: DIAMOND_SWORD, count: 1}
+    - {item: SHIELD, count: 1}
+
+chest_loot:
+  common:
+    - {item: STONE, count: 32}
+    - {item: WOODEN_PLANKS, count: 16}
+    - {item: COBBLESTONE, count: 16}
+    - {item: GOLDEN_APPLE, count: 1}
+  rare:
+    - {item: WEB, count: 3}
+    - {item: DIAMOND, count: 1}
+    - {item: PUMPKIN, count: 1}
+    - {item: DIAMOND_SWORD, count: 1}
+  epic:
+    - {item: DIAMOND_HELMET, count: 1}
+    - {item: DIAMOND_CHESTPLATE, count: 1}
+    - {item: DIAMOND_LEGGINGS, count: 1}
+    - {item: DIAMOND_BOOTS, count: 1}
+    - {item: ENCHANTED_GOLDEN_APPLE, count: 1}
+  legendary:
+    - {item: DIAMOND_PICKAXE, count: 1}
+    - {item: BOW, count: 1}
+    - {item: ARROW, count: 16}
+    - {item: DIAMOND_SWORD, count: 1}
+    - {item: ENCHANTED_GOLDEN_APPLE, count: 1}
+  halloween:
+    - {item: PUMPKIN, count: 1}
+    - {item: SPAWN_EGG, count: 1}
+    - {item: ENCHANTED_GOLDEN_APPLE, count: 1}
+    - {item: FIRE_CHARGE, count: 5}
+
+economy:
+  starting_balance: 100             # Starting balance for new players
+  kill_reward: 10                   # Reward for each kill
+  win_reward: 50                    # Reward for winning a game
+
+achievements:
+  first_blood:
+    description: "Get the first kill in a game"
+    reward: 20
+  survivor:
+    description: "Survive for 10 minutes in a game"
+    reward: 30
+  champion:
+    description: "Win a game"
+    reward: 50
+
+daily_missions:
+  - description: "Get 5 kills in one day"
+    reward: 25
+  - description: "Win 3 games in one day"
+    reward: 75
+  - description: "Play 10 games in one day"
+    reward: 50

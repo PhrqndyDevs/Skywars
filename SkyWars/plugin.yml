@@ -1,0 +1,59 @@
+name: SkyWars
+main: SkyWars\Main
+version: 1.0.0
+api: 5.19.0
+author: PhrqndyDevs [GitHub]
+description: A feature-rich SkyWars plugin for PocketMine
+
+commands:
+  startgame:
+    description: Start a SkyWars game
+    usage: /startgame
+    permission: skywars.command.startgame
+  endgame:
+    description: End a SkyWars game
+    usage: /endgame
+    permission: skywars.command.endgame
+  spectate:
+    description: Spectate a SkyWars game
+    usage: /spectate
+    permission: skywars.command.spectate
+  join:
+    description: Join a SkyWars game
+    usage: /join
+    permission: skywars.command.join
+  leave:
+    description: Leave a SkyWars game
+    usage: /leave
+    permission: skywars.command.leave
+  kit:
+    description: Select a kit
+    usage: /kit
+    permission: skywars.command.kit
+  leaderboard:
+    description: View the leaderboard
+    usage: /leaderboard
+    permission: skywars.command.leaderboard
+
+permissions:
+  skywars.command.startgame:
+    description: Allows the player to start a SkyWars game
+    default: op
+  skywars.command.endgame:
+    description: Allows the player to end a SkyWars game
+    default: op
+  skywars.command.spectate:
+    description: Allows the player to spectate a SkyWars game
+    default: true
+  skywars.command.join:
+    description: Allows the player to join a SkyWars game
+    default: true
+  skywars.command.leave:
+    description: Allows the player to leave a SkyWars game
+    default: true
+  skywars.command.kit:
+    description: Allows the player to select a kit
+    default: true
+  skywars.command.leaderboard:
+    description: Allows the player to view the leaderboard
+    default: true

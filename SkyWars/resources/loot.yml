@@ -1,0 +1,12 @@
+loot:
+  common:
+    - item: 1   # Stone
+      count: 32
+  rare:
+    - item: 30  # Cobweb
+      count: 3
+    - item: 397:0  # Pumpkin
+      count: 1
+  halloween:
+    - item: 86 # Special Pumpkin Head
+      count: 1
